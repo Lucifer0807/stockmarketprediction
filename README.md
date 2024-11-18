@@ -44,7 +44,7 @@ Once the dependencies are installed, you can launch the Streamlit application to
 - The app also supports generating predictions with various horizon periods (e.g., 2, 5, 60, 250 days) using rolling averages.
 
 ### Model Performance
-Accuracy Metrics: Precision score is used to evaluate the model’s performance. The app displays prediction accuracy over different time horizons.
+- Accuracy Metrics: Precision score is used to evaluate the model’s performance. The app displays prediction accuracy over different time horizons.
 
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
