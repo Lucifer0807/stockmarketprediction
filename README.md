@@ -24,7 +24,7 @@ Make sure you have Python 3.x installed and use the `requirements.txt` file to i
   pip install -r requirements.txt
   ```
 
-###Running the Application
+### Running the Application
 Once the dependencies are installed, you can launch the Streamlit application to interact with the model.
 
 1. Run the following command in your terminal:
