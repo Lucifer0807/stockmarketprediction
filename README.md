@@ -34,22 +34,22 @@ Once the dependencies are installed, you can launch the Streamlit application to
   ```
 2. This will open a new tab in your web browser with the Streamlit interface where you can visualize the model's predictions and explore the data.
 
-##How It Works
-Data Collection: The model uses historical S&P 500 data, which is fetched using the yfinance library.
-Model Training: A Random Forest Classifier is trained on historical data to predict whether the S&P 500 closing price will go up the next day.
-Prediction: The app predicts tomorrow's movement (up or down) based on the latest data.
+### How It Works
+- Data Collection: The model uses historical S&P 500 data, which is fetched using the yfinance library.
+- Model Training: A Random Forest Classifier is trained on historical data to predict whether the S&P 500 closing price will go up the next day.
+- Prediction: The app predicts tomorrow's movement (up or down) based on the latest data.
 
-##Backtesting
-The backtesting function evaluates the model by splitting the historical data into training and test sets. It checks the prediction accuracy over multiple iterations using the Random Forest Classifier.
-The app also supports generating predictions with various horizon periods (e.g., 2, 5, 60, 250 days) using rolling averages.
+### Backtesting
+- The backtesting function evaluates the model by splitting the historical data into training and test sets. It checks the prediction accuracy over multiple iterations using the Random Forest Classifier.
+- The app also supports generating predictions with various horizon periods (e.g., 2, 5, 60, 250 days) using rolling averages.
 
-##Model Performance
+### Model Performance
 Accuracy Metrics: Precision score is used to evaluate the model’s performance. The app displays prediction accuracy over different time horizons.
 
-##License
+### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-##Acknowledgements
-yfinance for fetching historical stock data
-Streamlit for creating interactive web applications
-Scikit-learn for implementing machine learning models
+### Acknowledgements
+- yfinance for fetching historical stock data
+- Streamlit for creating interactive web applications
+- Scikit-learn for implementing machine learning models
