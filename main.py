@@ -15,10 +15,13 @@ sp500["Target"] = (sp500["tomorrow"] > sp500["Close"]).astype(int)
 
 # Filter data for the years starting from 1990
 sp500 = sp500.loc["1990-01-01":].copy()
+# Drop missing values first
+sp500 = sp500.dropna()
 
-# Training and Testing split
+# Then do the split
 train = sp500.iloc[:-100]
 test = sp500.iloc[-100:]
+
 
 # Define predictors and train the model
 predictors = ["Close", "Volume", "Open", "High", "Low"]
